@@ -1,9 +1,7 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
 <?php
 include "condb.php";
 ?>
-<div id="div_res"></div>
+
 
 <table>
     <thead>
@@ -39,12 +37,12 @@ include "condb.php";
         //alert($(this).attr('data'));
         let id_val = $(this).attr('data');
         $.ajax({
-            url:"del.php",
-            method:"GET",
-            data:{
-                id:id_val
+            url: "std_del.php",
+            method: "GET",
+            data: {
+                id: id_val
             },
-            success: function (res) {
+            success: function(res) {
                 $("#div_res").html(res);
             }
         });

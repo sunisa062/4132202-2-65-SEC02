@@ -22,8 +22,8 @@ echo "POST : " . $_POST['pass'];
             <td>1</td>
             <td><?php echo $name ?></td>
         </tr>
-        <?php 
-        for($i = 2; $i < 5; $i++){ 
+        <?php
+        for ($i = 2; $i < 5; $i++) {
         ?>
             <tr>
                 <td><?= $i ?></td>
